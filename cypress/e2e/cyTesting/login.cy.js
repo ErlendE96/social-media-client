@@ -23,7 +23,7 @@ describe("Login Page", () => {
     cy.get("#loginForm").submit();
     cy.wait(1000);
     // the login button should not be visible since the user should be logged in
-    cy.get('.modal-dialog button[data-auth="login"]').should("not.be.visible");
+    cy.get('button[data-auth="logout"]').should('be.visible');
   });
 
   

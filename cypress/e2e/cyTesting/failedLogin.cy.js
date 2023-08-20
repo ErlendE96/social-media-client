@@ -25,7 +25,7 @@ describe("Login Page", () => {
           cy.wait(1000);
 
           //making sure the logout button is not visible, since the user should not be logged in
-          cy.get('button[data-auth="logout"]').should('not.be.visible');
+          cy.get('button[data-auth="login"]').should('be.visible');
       });
   
     
