@@ -24,8 +24,8 @@ describe("failed login", () => {
           cy.get("#loginForm").submit();
           cy.wait(1000);
 
-          //making sure the login button still is visible, since it should be a failed login
-          cy.get('button[data-auth="login"]').should('be.visible');
+          //making sure the logout button is not visible, since it should be a failed login
+          cy.get('button[data-auth="logout"]').should('not.be.visible');
       });
   
     
