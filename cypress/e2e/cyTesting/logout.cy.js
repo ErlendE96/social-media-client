@@ -1,13 +1,11 @@
-describe("Login Page", () => {
-    it("Should open and close the Login modal", () => {
-      // Visit the login page
+describe("login and logout", () => {
+    it("login and logout of the page test", () => {
       cy.visit("index.html");
   
        // waiting for the register popup to be visible
       cy.get('.modal-dialog').should('be.visible');
       cy.wait(1000);
 
-  
       // Find and click the Login button
       cy.get('.modal-dialog button[data-auth="login"]').click();
       cy.wait(1000);

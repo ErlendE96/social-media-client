@@ -1,5 +1,5 @@
-describe("Login Page", () => {
-  it("Should open and close the Login modal", () => {
+describe("Login", () => {
+  it("successfull login test", () => {
     cy.visit("index.html");
 
     // waiting for the register popup to be visible
@@ -22,7 +22,7 @@ describe("Login Page", () => {
     // submitting the loginform
     cy.get("#loginForm").submit();
     cy.wait(1000);
-    // the login button should not be visible since the user should be logged in
+    // making sure the logout button is visible
     cy.get('button[data-auth="logout"]').should('be.visible');
   });
 

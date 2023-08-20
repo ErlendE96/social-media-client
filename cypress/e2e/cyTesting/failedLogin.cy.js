@@ -1,7 +1,7 @@
 // test is supposed to fail
 
-describe("Login Page", () => {
-    it("Should show an error message upon failed login attempt", () => {
+describe("failed login", () => {
+    it("failed login attempt test", () => {
       cy.visit("index.html");
   
       // waiting for the register popup to be visible
@@ -24,7 +24,7 @@ describe("Login Page", () => {
           cy.get("#loginForm").submit();
           cy.wait(1000);
 
-          //making sure the logout button is not visible, since the user should not be logged in
+          //making sure the login button still is visible, since it should be a failed login
           cy.get('button[data-auth="login"]').should('be.visible');
       });
   
