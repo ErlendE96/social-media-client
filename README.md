@@ -1,4 +1,7 @@
-# social-media-client
+[![Automated E2E Testing](https://github.com/ErlendE96/social-media-client/actions/workflows/e2e-test.yml/badge.svg)](https://github.com/ErlendE96/social-media-client/actions/workflows/e2e-test.yml)
+[![Automated Unit Testing](https://github.com/ErlendE96/social-media-client/actions/workflows/unit-test.yml/badge.svg)](https://github.com/ErlendE96/social-media-client/actions/workflows/unit-test.yml)
+
+# social-media-client-testing
 
 Before starting the project, make sure you have Node.js and npm installed on your computer.
 
