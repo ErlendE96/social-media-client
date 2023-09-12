@@ -48,3 +48,6 @@ npm run lint
 ## To format code:
 
 npm run format
+
+## link to github pages:
+https://erlende96.github.io/social-media-client/
